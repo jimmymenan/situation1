@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Stations [
+    <!ELEMENT Stations (Station+)>
+    <!ELEMENT Station (Ville, Lieu, Type, LibelleType, Niveau, Voitures?)>
+    <!ELEMENT Ville (#PCDATA)>
+    <!ELEMENT Lieu (#PCDATA)>
+    <!ELEMENT Type (#PCDATA)>
+    <!ELEMENT LibelleType (#PCDATA)>
+    <!ELEMENT Niveau (#PCDATA)>
+    <!ELEMENT Voitures (Voiture+)>
+    <!ELEMENT Voiture (#PCDATA)>
+
+    <!ATTLIST Station Numero CDATA #REQUIRED>
+    <!ATTLIST Voiture IdVoiture CDATA #REQUIRED
+        TypeVoiture CDATA #REQUIRED
+        NbPlacesVoiture CDATA #REQUIRED
+        Auto CDATA #REQUIRED>
+    ]>
+<Stations>
+    <Station Numero="1">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Chartrons</Lieu>
+        <Type>v</Type>
+        <LibelleType>17 rue Sicard</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="1" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="2" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="2">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Cité mondiale</Lieu>
+        <Type>p</Type>
+        <LibelleType>Cité mondiale</LibelleType>
+        <Niveau>-2</Niveau>
+        <Voitures>
+            <Voiture IdVoiture="3" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="4" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="5" TypeVoiture="Break" NbPlacesVoiture="7" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="3">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Barrière St Médard</Lieu>
+        <Type>v</Type>
+        <LibelleType>274 bd Wilson</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="6" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="7" TypeVoiture="Break" NbPlacesVoiture="7" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="4">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Quinconces</Lieu>
+        <Type>p</Type>
+        <LibelleType>Terminal Bus</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="8" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="5">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Tourny</Lieu>
+        <Type>v</Type>
+        <LibelleType>5 place Tourny</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="9" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="10" TypeVoiture="City" NbPlacesVoiture="4" Auto="O"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="6">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Jaurès</Lieu>
+        <Type>v</Type>
+        <LibelleType>2 place Jean Jaurès</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="11" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="12" TypeVoiture="City" NbPlacesVoiture="4" Auto="O"></Voiture>
+            <Voiture IdVoiture="13" TypeVoiture="Break" NbPlacesVoiture="7" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="7">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Stalingrad</Lieu>
+        <Type>v</Type>
+        <LibelleType>3 place Stalingrad</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="14" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="15" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="16" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="8">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Gaviniès</Lieu>
+        <Type>v</Type>
+        <LibelleType>37 av Larminat</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="17" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="18" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="9">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Mériadeck</Lieu>
+        <Type>p</Type>
+        <LibelleType>CC Mériadeck</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="19" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="20" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="21" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="10">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Pey Berland</Lieu>
+        <Type>p</Type>
+        <LibelleType>Pey Berland</LibelleType>
+        <Niveau>-3</Niveau>
+        <Voitures>
+            <Voiture IdVoiture="22" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="23" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="11">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Musée Aquitaine</Lieu>
+        <Type>v</Type>
+        <LibelleType>12 crs Pasteur</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="24" TypeVoiture="City" NbPlacesVoiture="4" Auto="O"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="12">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Porte Bourgogne</Lieu>
+        <Type>v</Type>
+        <LibelleType>11 crs Victor Hugo</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="25" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="26" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="27" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="13">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Victor Hugo</Lieu>
+        <Type>p</Type>
+        <LibelleType>Victor Hugo</LibelleType>
+        <Niveau>4</Niveau>
+        <Voitures>
+            <Voiture IdVoiture="28" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="14">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Saint Croix</Lieu>
+        <Type>v</Type>
+        <LibelleType>devant église</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="29" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="30" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="15">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Gaviniès</Lieu>
+        <Type>v</Type>
+        <LibelleType>37 av Gal de Larminat</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="31" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="32" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="16">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Bergonié</Lieu>
+        <Type>v</Type>
+        <LibelleType>crs Argonne</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="33" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="34" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="35" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="17">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Nansouty</Lieu>
+        <Type>v</Type>
+        <LibelleType>244 crs de l'Yser</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="36" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="18">
+        <Ville>Bordeaux</Ville>
+        <Lieu>Terres Neuves</Lieu>
+        <Type>v</Type>
+        <LibelleType>allée des Pruniers</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="37" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="38" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="19">
+        <Ville>Bègles</Ville>
+        <Lieu>Mairie</Lieu>
+        <Type>v</Type>
+        <LibelleType>angle Calixte Camelle / René Cachin</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="39" TypeVoiture="City" NbPlacesVoiture="4" Auto="O"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="20">
+        <Ville>Mérignac</Ville>
+        <Lieu>Centre</Lieu>
+        <Type>v</Type>
+        <LibelleType>14 av Maréchal Leclerc</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="40" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="41" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="21">
+        <Ville>Talence</Ville>
+        <Lieu>Forum</Lieu>
+        <Type>v</Type>
+        <LibelleType>place de l'Eglise</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="42" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="43" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="22">
+        <Ville>Talence</Ville>
+        <Lieu>BEM</Lieu>
+        <Type>p</Type>
+        <LibelleType>école de Managment</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="44" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="45" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+            <Voiture IdVoiture="46" TypeVoiture="City" NbPlacesVoiture="4" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="23">
+        <Ville>Cenon</Ville>
+        <Lieu>Gare</Lieu>
+        <Type>v</Type>
+        <LibelleType>69 av Jean Jaurès</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="47" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+    <Station Numero="24">
+        <Ville>Pessac</Ville>
+        <Lieu>Gare</Lieu>
+        <Type>v</Type>
+        <LibelleType>devant la gare SNCF</LibelleType>
+        <Niveau></Niveau>
+        <Voitures>
+            <Voiture IdVoiture="48" TypeVoiture="Poly" NbPlacesVoiture="5" Auto="N"></Voiture>
+            <Voiture IdVoiture="49" TypeVoiture="Util" NbPlacesVoiture="5" Auto="N"></Voiture>
+        </Voitures>
+    </Station>
+
+
+</Stations>
